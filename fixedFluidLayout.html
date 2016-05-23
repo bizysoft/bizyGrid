@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- 
+ ***************************************************************************************
+ * If you find our software helpful, the best way to contribute is to hire us to work 
+ * for you. Details at www.bizysoft.com.au
+ *
+ * author Chris Maude, chris@bizysoft.com.au
+ * copyright Copyright (c) 2016, bizySoft
+ * license http://opensource.org/licenses/gpl-license GPL-3.0 or later
+ *
+ ***************************************************************************************
+-->
+<html>
+	<head>
+		<!-- gridLayout.css always goes first -->
+		<link rel="stylesheet" media="screen" type="text/css" href="css/gridLayout.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/bizyGrid.css" />
+	
+		<meta name="description" content="bizySoft - Web-site layout management." />
+		<title>bizySoft... - Complex layout.</title>
+		
+	</head>
+	
+	<body id="homePage">
+		<div class="grid stretch">
+			<div class="gridRow1"> <!-- Main grid rows from gridLayout.css to enforce the basic layout. -->
+				<div class="gridCell stretchHorz"> <!-- Use the more general gridCells here because each cell can have a grid-->
+					<div class="grid stretch">
+						<div class="gridRow">
+							<div class="gridCell backgroundDarkGrey"></div> <!-- We use classes for specific properties -->
+							<div class="gridCell width70pc cellCenterContent backgroundDarkGrey">
+							<p>This is a more complex fluid layout showing that grids can handle a mixture of text and images with ease.</p></div>
+							<div class="gridCell backgroundDarkGrey"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gridRow2">
+				<div class="gridCell stretchHorz">
+					<div class="grid stretch">
+						<div class="gridRow backgroundWhite">
+							<div class="gridCell "></div>
+							<div class="gridCell width70pc backgroundVeryLightGrey">
+								<div class="grid stretch">
+									<div class="gridRow">
+										<div class="gridCell borderBlack darkGrey cellCenterContent backgroundLightGrey">
+											<h3>The centre row has fluid width and height. The header and footer rows are fixed 
+												height with fluid width.</h3>
+										</div>
+										<div class="gridCell borderBlack">
+											<div class="grid stretch">
+												<div class="gridRow">
+													<div class="gridCell backgroundWave cellCenterContent">
+														<img class="bizyLogo" alt="bizyLogo" src="images/bizySoftLogo.png">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gridRow">
+										<div class="gridCell borderBlack darkGrey backgroundLightGrey">
+											<div class="grid stretch">
+												<div class="gridRow">
+													<div class="gridCell cellCenterContent height50pc backgroundVeryLightGrey">
+													Grid's can interact with complex behaviour like this set of cell's.
+													</div>
+													<div class="gridCell cellCenterContent backgroundLightGrey">
+														<div class="grid stretch">
+															<div class="gridRow">
+																<div class="gridCell cellCenterContent height50pc backgroundVeryLightGrey">
+																a
+																</div>
+																<div class="gridCell cellCenterContent backgroundLightGrey">
+																	<div class="grid stretch">
+																		<div class="gridRow">
+																			<div class="gridCell cellCenterContent height50pc backgroundVeryLightGrey">
+																			a
+																			</div>
+																			<div class="gridCell cellCenterContent  backgroundLightGrey">
+																				<div class="grid stretch">
+																					<div class="gridRow">
+																						<div class="gridCell cellCenterContent height50pc backgroundVeryLightGrey">
+																						a
+																						</div>
+																						<div class="gridCell cellCenterContent backgroundLightGrey">
+																							<div class="grid stretch">
+																								<div class="gridRow">
+																									<div class="gridCell backgroundVeryLightGrey">
+																									</div>
+																									<div class="gridCell backgroundLightGrey">
+																									</div>
+																								</div>
+																								<div class="gridRow">
+																									<div class="gridCell height50pc backgroundLightGrey">
+																									</div>
+																									<div class="gridCell backgroundVeryLightGrey">
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="gridRow">
+																						<div class="gridCell cellCenterContent height50pc backgroundLightGrey">
+																						c
+																						</div>
+																						<div class="gridCell cellCenterContent backgroundVeryLightGrey">
+																						d
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="gridRow">
+																			<div class="gridCell cellCenterContent height50pc backgroundLightGrey">
+																			c
+																			</div>
+																			<div class="gridCell cellCenterContent backgroundVeryLightGrey">
+																			d
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="gridRow">
+																<div class="gridCell cellCenterContent height50pc backgroundLightGrey">
+																c
+																</div>
+																<div class="gridCell cellCenterContent backgroundVeryLightGrey">
+																d
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="gridRow">
+													<div class="gridCell cellCenterContent height50pc backgroundLightGrey">
+													c
+													</div>
+													<div class="gridCell cellCenterContent backgroundVeryLightGrey">
+													Each cell can contain another grid.
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="gridCell borderBlack darkGrey cellCenterContent backgroundVeryLightGrey">
+											<h3>Content will push the footer when space is required, cell's are aligned by the grid's.</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gridCell"></div>
+						</div>
+					</div>
+				</div>
+		  </div>
+			<div class="gridRow3">
+				<div class="gridCell darkGrey stretchHorz">
+					<div class="grid height50px stretchHorz">
+						<div class="gridRow">
+							<div class="gridCell backgroundDarkGrey"></div>
+							<div class="gridCell width70pc cellCenterContent backgroundDarkGrey">
+								<a href="fixedLayout.html">Fixed...</a> 
+								<a href="fluidLayout.html">Fluid...</a> 
+								<a href="2ColumnFixedLayout.html">2 Column Fixed...</a>
+								<a href="2ColumnFluidLayout.html">2 Column Fluid...</a>
+							</div>
+							<div class="gridCell backgroundDarkGrey"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

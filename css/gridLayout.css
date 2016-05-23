@@ -1,0 +1,131 @@
+/***************************************************************************************
+ * If you find our software helpful, the best way to contribute is to hire us to work for you. 
+ * Details at www.bizysoft.com.au
+ *
+ * author Chris Maude, chris@bizysoft.com.au
+ * copyright Copyright (c) 2016, bizySoft
+ * license http://opensource.org/licenses/gpl-license GPL-3.0 or later
+ *
+ ***************************************************************************************
+ * This layout will work in all major browsers that support CSS table behaviour. 
+ *
+ * Why NOT use tools that already work? CSS Tables have mature support for layout which helps 
+ * some of the more complex issues in modern website design.
+ *
+ * eg. sticky footer at the bottom, pushed only by content.
+ * Line up or stretch columns heights full length, combinations of fixed and fluid etc.
+ *
+ * This particular layout is designed for 9 potential cells to place content,
+ * but you can specify any configuration you want with the general grid, gridRow and gridCell
+ * classes.
+ * 
+ * gridRow's control the cell height, gridCell's control the cell width.
+ * 
+ * You normally place your main content in the center cell. Nav menu's etc. can be contained 
+ * in any cell that you desire.
+ */
+
+/*
+ * Set top level elements.
+ */
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%; /* important for css table behaviour */
+}
+
+/* 
+ * These classes can be used as general containers.
+ */
+.grid {
+	display: table;
+	table-layout: fixed;
+}
+
+.gridRow {
+	display: table-row;
+}
+
+.gridCell {
+	display: table-cell;
+}
+
+/* 
+ * Numbered gridRow's and gridCell's control the layout. Practically, the numbering is only
+ * used to target the particular cell in the layout.
+ *
+ * In this layout, gridRow1, gridRow2, gridRow3 use the corresponding numbered gridCells for 
+ * of potentially varying width. You could use as many row's/cell's as you please, a 3 x 3 matrix is used 
+ * here as an example.
+ *
+ * We only impose specific properties here to enforce the layout. Place other specific properties 
+ * in another file.
+ *
+ * Note that gridRow2 is the content row for this layout. I does not require a height and will auto-stretch 
+ * between header and footer.
+ */
+.gridRow1, .gridRow2, .gridRow3 {
+	display: table-row;
+}
+
+/*
+ * gridRow1 is the header row for this layout. Enforce a fixed height property for the row, gridCells 
+ * will auto-stretch to this height so you don't have to specify them.
+ */
+.gridRow1 {
+	height: 175px;
+}
+
+/* 
+ * gridRow3 is the footer row for this layout.
+ *
+ * Another fixed height row to enforce the layout.
+ */
+.gridRow3 {
+	height: 50px;
+}
+
+/*
+ * These are the numbered gridCell's used inside the numbered gridRow's
+ * to form the 3x3 matrix.
+ *
+ * gridCell12 has a width applied by the fluid and fixed layouts for the desired result.
+ *
+ * gridCell22 is the main content in this example. If no height supplied, this cell auto 
+ * sizes between header and footer.
+ */
+.gridCell11, .gridCell12, .gridCell13, .gridCell21, .gridCell22, .gridCell23, .gridCell31, .gridCell32, .gridCell33 {
+	display: table-cell;
+}
+
+/*
+ * Some classes that are useful in the grid layout.
+ */
+.stretch {
+	width: 100%;
+	height: 100%;
+}
+
+.stretchHorz {
+	width: 100%;
+}
+
+.stretchVert {
+	height: 100%;
+}
+
+/*
+ * Center classes are specific to gridCell's
+ */
+.cellCenterContent {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.cellCenterContentVert {
+	vertical-align: middle;
+}
+
+.cellCenterContentHorz {
+	text-align: center;
+}

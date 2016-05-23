@@ -1,0 +1,115 @@
+/***************************************************************************************
+ * If you find our software helpful, the best way to contribute is to hire us to work for you. 
+ * Details at www.bizysoft.com.au
+ *
+ * author Chris Maude, chris@bizysoft.com.au
+ * copyright Copyright (c) 2016, bizySoft
+ * license http://opensource.org/licenses/gpl-license GPL-3.0 or later
+ *
+ ***************************************************************************************
+ *
+ * Some general classes for appearance
+ * and size.
+ */
+ 
+body {
+	color: white;
+  font-family: Segoe, Arial;
+}
+
+.content {
+	padding: 15px;
+}
+
+
+.width20pc {
+	width: 20%;
+}
+
+.width25pc {
+	width: 25%;
+}
+
+.width30pc {
+	width: 30%;
+}
+
+.width33pc {
+	width: 33%;
+}
+
+.width70pc {
+	width: 70%;
+}
+
+.width50pc {
+	width: 50%;
+}
+
+.width700px {
+	width: 700px; /* Fixed width */
+}
+
+.height200px {
+	height: 200px;
+}
+
+.height50px {
+	height: 50px;
+}
+
+.height50pc {
+	height: 50%;
+}
+
+.grey {
+  color: #a8a9ad;
+}
+
+.white {
+  color: white;
+}
+
+.darkGrey {
+  color: #212121;
+}
+
+.backgroundWhite {
+  background-color: white;
+}
+
+.backgroundDarkGrey {
+  background-color: #212121;
+}
+
+.backgroundLightGrey {
+  background-color: #efefef;
+}
+
+.backgroundVeryLightGrey {
+  background-color: #fafafa;
+}
+
+.backgroundWave {
+	background: url("../images/wave.jpg") no-repeat left top;
+	background-size: 100% 100%;
+}
+
+.borderBlack {
+	border: solid black 1px;
+}
+
+img.bizyLogo {
+	width: 70%;
+}
+
+/* Purposely force no decoration to all anchors for all screens*/
+a {
+    text-decoration: none;
+}
+
+a:link {color: grey;}      /* unvisited link */
+a:visited {color: grey;}  /* visited link */
+a:hover {color: white;}  /* mouse over link */
+a:active {color: grey;}  /* selected link */ 
+

@@ -1,0 +1,24 @@
+/***************************************************************************************
+ * If you find our software helpful, the best way to contribute is to hire us to work for you. 
+ * Details at www.bizysoft.com.au
+ *
+ * author Chris Maude, chris@bizysoft.com.au
+ * copyright Copyright (c) 2016, bizySoft
+ * license http://opensource.org/licenses/gpl-license GPL-3.0 or later
+ *
+ ***************************************************************************************
+ *
+ * Requires gridLayout.css to be loaded beforehand.
+ *
+ * This particular implementation is a fixed layout using a fixed width 
+ * center column.
+ *
+ * Fixed width layout may suit better if you have a combination of text and images because 
+ * they all remain proportional to their containers when zoomed/resized. Content 
+ * will stay in the middle, scrollbars are used if required.
+ * 
+ * The only cell we need to augment for a fixed layout in this example.
+ */
+.gridCell12 {
+	width: 900px; /* Fixed width content*/
+}

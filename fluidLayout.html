@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+ ***************************************************************************************
+ * If you find our software helpful, the best way to contribute is to hire us to work 
+ * for you. Details at www.bizysoft.com.au
+ *
+ * author Chris Maude, chris@bizysoft.com.au
+ * copyright Copyright (c) 2016, bizySoft
+ * license http://opensource.org/licenses/gpl-license GPL-3.0 or later
+ *
+ ***************************************************************************************
+-->
+<html>
+	<head>
+		<!-- gridLayout.css always goes first -->
+		<link rel="stylesheet" media="screen" type="text/css" href="css/gridLayout.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/fluidLayout.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/bizyGrid.css" />
+	
+		<meta name="description" content="bizySoft - Web-site layout management." />
+		<title>bizySoft... - Fluid layout.</title>
+	</head>
+	
+	<body id="homePage">
+		<div class="grid stretch">
+			<div class="gridRow1 backgroundDarkGrey">
+				<div class="gridCell11"></div>
+				<div class="gridCell12 cellCenterContent">This is a fluid layout with a fixed header and footer height.</div>
+				<div class="gridCell13"></div>
+			</div>
+			<div class="gridRow2">
+				<div class="gridCell21"></div>
+				<div class="gridCell22 darkGrey backgroundLightGrey content">
+					<h3>This cell will constrain the content horizontally and push the footer when space is required. Vertical 
+							scrollbars are used when required.</h3>
+					<h3>A single CSS entry was changed from the 'Fixed' demo to achieve this layout.</h3>
+					<p>Fluid layouts suit better when you don't want your content to be lopped or scrolled horizontally. 
+					They are best for mobile device browsers. In this layout, content cell's will remain the same relative horizontal 
+					size to your browser window.</p>
+					<p>Notice how the footer stays at the bottom when the cell is larger than the content.</p>
+					<h3>Try it by resizing your browser window.</h3>
+				</div>
+			  <div class="gridCell23"></div>
+		  </div>
+			<div class="gridRow3 backgroundDarkGrey">
+				<div class="gridCell31"></div>
+				<div class="gridCell32 cellCenterContent">
+					<a href="fixedLayout.html">Fixed...</a> 
+					<a href="2ColumnFixedLayout.html">2 Column Fixed...</a>
+					<a href="2ColumnFluidLayout.html">2 Column Fluid...</a>
+					<a href="fixedFluidLayout.html">Complex...</a>
+				</div>
+				<div class="gridCell33"></div>
+			</div>
+		</div>
+	</body>
+</html>

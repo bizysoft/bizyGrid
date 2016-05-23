@@ -1,0 +1,29 @@
+/***************************************************************************************
+ * If you find our software helpful, the best way to contribute is to hire us to work for you. 
+ * Details at www.bizysoft.com.au
+ *
+ * author Chris Maude, chris@bizysoft.com.au
+ * copyright Copyright (c) 2016, bizySoft
+ * license http://opensource.org/licenses/gpl-license GPL-3.0 or later
+ *
+ ***************************************************************************************
+ *
+ * Requires gridLayout.css to be loaded beforehand.
+ *
+ * This particular implementation is a fluid layout, content uses the remaining percentage of 
+ * screen between fixed width side spacers.
+ *
+ * Fluid layouts are best when you don't want your content to be lopped or scrolled horizontally 
+ * when zoomed/resized.
+ * 
+ * Content containers will remain the same relative size horizontally to your browser 
+ * window, containers will stretch with the content vertically.
+ *
+ * You may have more trouble with images using this layout, because the aspect ratio of 
+ * cell's will change with the size of your browser window.
+ *
+ * The only cells we need to augment for a fluid layout in this example.
+ */
+.gridCell11, .gridCell13 {
+	width: 120px; /* Fixed width side spacers give a fluid width content */
+}
