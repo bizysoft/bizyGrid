@@ -1,21 +1,21 @@
-Project Name : 
---------------
 bizyGrid
+--------------
 
-What is it:
+What is it
 -----------
 Grid layout for websites using CSS tables
 
-Features:
+Features
 ---------
 + Easily partition your layout into the sections you need like header, footer and main content.
-+ Uses mature CSS standards. No hacks to get things to work. No margins,floats or Javascript required.
++ Uses mature CSS standards. 
++ No hacks to get things to work. No margins,floats or Javascript required.
 
-Where do I get it:
+Where do I get it
 ------------------
-Our GitHub repository contains everything you need.
+Our GitHub repository contains everything you need. No external dependencies.
 
-How do I use it:
+How do I use it
 --------------
 
 The easiest way to start the ball rolling is to:
@@ -24,12 +24,13 @@ The easiest way to start the ball rolling is to:
 + Then take a look at the HTML and CSS files by viewing the source through your browser.
 + The same demo can be accessed througn [our website](http://www.bizysoft.com.au/bizyGrid.php).
 
-Helping out:
+Helping out
 ------------
-Our software is free for you to use under the license terms. However if you find our software helpful in any way, 
-the best way to contribute is to hire us to work for you, details at [our website](http://www.bizysoft.com.au/contribute.php).
+Our software is free for you to use under the license terms. See the LICENSE file with the distribution.
 
-Contact:
+If you find our software helpful in any way, the best way to contribute is to hire us to work for you, details at [our website](http://www.bizysoft.com.au/contribute.php).
+
+Contact
 --------
 Chris Maude through [our website](http://www.bizysoft.com.au).
 
